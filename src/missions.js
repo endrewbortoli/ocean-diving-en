@@ -67,12 +67,12 @@ const getMissionsByDifficulty = (difficulty) => {
                 {
                     index: 0,
                     concluded: false,
-                    title: "Pesca fantasma",
+                    title: "Ghost Fishing ",
                     lat: -9.5627778,
                     lng: -35.6231667,
-                    location: "Costa brasileira",
+                    location: " Brazilian Coast",
                     image: CostaBrasileira,
-                    text: "A pesca fantasma é caracterizada por petrechos de pesca que são abandonados ou descartados no mar, como redes ou linhas. Tais materiais afetam em grande escala a biodiversidade marinha, tendo em vista que a ONG World Animal Protection estima que 10% do lixo plástico que entra nos mares e oceanos é equipamento de pesca perdido ou abandonado nos mares (redes fantasmas). No Brasil, cerca de 69 mil animais são afetados pela pesca fantasma por dia. ",
+                    text: "Ghost fishing is characterized by fishing gear that is abandoned or discarded in the sea, such as nets or lines. These materials significantly impact marine biodiversity, as the NGO World Animal Protection estimates that 10% of the plastic waste entering seas and oceans consists of lost or abandoned fishing equipment (ghost nets). In Brazil, approximately 69,000 animals are affected by ghost fishing every day.",
                     initialViewState: {
                         latitude: -9.5627778,
                         longitude: -35.6231667,
@@ -110,11 +110,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Essa imagem representa um enorme problema. O que você vê? "}
+                                    questionText={" This image represents a huge problem. What do you see?"}
                                     options={[
-                                        { id: 'a', text: 'Uma tartaruga morta devido aos detritos de pesca.', explanation: 'Isso mesmo, que olhar afiado! Essa tartaruga foi afetada pelo problema da pesca fantasma e infelizmente morreu por conta disso.'},
-                                        { id: 'b', text: 'Uma tartaruga em seu habitat natural, nadando livremente. ', explanation: 'Hmm, não é bem isso. Essa tartaruga não está nadando livremente. Ela está presa em uma rede, um problema típico da pesca fantasma. ' },
-                                        { id: 'c', text: 'Uma tartaruga sendo libertada por mergulhadores.', explanation: 'Boa tentativa, mas não foi isso que aconteceu. Essa tartaruga não foi salva por mergulhadores; ela acabou sendo vítima da pesca fantasma. ' }
+                                        { id: 'a', text: 'A dead turtle due to fishing debris.', explanation: 'That’s right, what a sharp eye! This turtle was affected by the problem of ghost fishing and unfortunately died because of it.'},
+                                        { id: 'b', text: 'A turtle in its natural habitat, swimming freely.', explanation: 'Hmm, that’s not quite right. This turtle is not swimming freely. It is trapped in a net, a typical problem of ghost fishing.'},
+                                        { id: 'c', text: 'A turtle being freed by divers.', explanation: 'Good try, but that’s not what happened. This turtle was not saved by divers; it ended up being a victim of ghost fishing.' }
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={1}
@@ -128,19 +128,19 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={2}>
                                     <div className="mission-card-header">
-                                        <h2>Pesca Fantasma</h2>
-                                        <h4>Um pouco mais sobre o problema da Pesca Fantasma</h4>
+                                        <h2>Ghost Fishing</h2>
+                                        <h4>A little more about the problem of ghost fishing.</h4>
                                     </div>
                                     <div className="list">
-                                         <h3>Animal preso em rede fantasma</h3>
+                                         <h3>Animal trapped in a ghost net.</h3>
                                         <ul>
                                             <div className="image-container">
                                                 <img src={FocaPesca}></img>
                                             </div>
                             
                                             <ul>
-                                                <li>A pesca fantasma é um problemão! Ela não só coloca em risco os animais, mas também impacta vários outros seres que vivem no mar — é o que chamamos de biodiversidade marinha.  </li>
-                                                <li>E olha só: o Brasil é um dos lugares mais afetados, segundo a ONG World Animal Protection. Eles estimam que, todos os dias, cerca de 69 mil animais sofrem com redes e materiais de pesca abandonados na nossa costa! É um desafio enorme que nem sempre a gente vê, mas que pode até causar a extinção de espécies superimportantes para o equilíbrio do oceano e para todos nós!
+                                                <li>Ghost fishing is a big problem! It not only puts animals at risk but also impacts many other beings that live in the sea — this is what we call marine biodiversity. </li>
+                                                <li>And look: Brazil is one of the most affected places, according to the NGO World Animal Protection. They estimate that every day, about 69,000 animals suffer from abandoned nets and fishing materials along our coast! It is a huge challenge that we don't always see, but it can even lead to the extinction of species that are extremely important for the balance of the ocean and for all of us!
                                                 </li>
                                             </ul>
                                             <div className="image-container">
@@ -148,8 +148,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                             </div>
                                     
                                             <ul>
-                                                <li>A imagem acima mostra uma rede de pesca que foi encontrada em cima de vários corais na área de visitação dos Galés de Maragogi, no Brasil, e que precisou ser retirada por profissionais.</li>
-                                                <li>É fácil perceber o grande problema que isso representa! Redes presas em corais podem acabar com habitats essenciais para muitos seres vivos, e isso afeta o ecossistema — ou seja, o conjunto de seres que vivem e dependem uns dos outros para manter o equilíbrio no ambiente. No fim, esses materiais abandonados prejudicam toda a biodiversidade e desorganizam o ecossistema marinho. </li>
+                                                <li>The image above shows a fishing net that was found on top of several corals in the visitor area of the Galés de Maragogi, Brazil, and had to be removed by professionals.</li>
+                                                <li>It is easy to see the great problem that this represents! Nets trapped in corals can destroy essential habitats for many living beings, and this affects the ecosystem — that is, the group of organisms that live and depend on each other to maintain balance in the environment. In the end, these abandoned materials harm the entire biodiversity and disrupt the marine ecosystem.</li>
                                             </ul>
 
                                         </ul>
@@ -163,11 +163,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 3,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Esta rede foi deixada no oceano. De acordo com seus conhecimentos, o que pode acontecer com os animais marinhos que encontram redes abandonadas como essa?  "}
+                                    questionText={" This net was left in the ocean. According to your knowledge, what can happen to marine animals that encounter abandoned nets like this?"}
                                     options={[
-                                        { id: 'a', text: 'Eles podem acabar presos na rede e ficar feridos ou morrer. ', explanation: 'Incrível! Isso mesmo, esses materiais descartados nos oceanos prejudicam demais a biodiversidade marinha e principalmente os animais.' },
-                                        { id: 'b', text: 'A rede ajuda os animais a se esconderem de predadores.', explanation: 'Não exatamente. Embora pareça um abrigo, essa rede não oferece proteção; ela representa um grande risco para os animais. ' },
-                                        { id: 'c', text: 'A rede oferece um lugar seguro para os animais descansarem. ', explanation: 'Boa tentativa, mas redes abandonadas não são seguras para descanso. Elas são armadilhas que colocam a vida dos animais em perigo. ' }
+                                        { id: 'a', text: 'They can end up trapped in the net and get injured or die.', explanation: 'Incredible! That’s right, these materials discarded in the oceans harm marine biodiversity greatly, especially the animals.'},
+                                        { id: 'b', text: 'The net helps animals hide from predators.', explanation: 'Although it appears to be a shelter, this net does not offer protection; it represents a significant risk for the animals.' },
+                                        { id: 'c', text: 'The net provides a safe place for animals to rest.', explanation: 'Abandoned nets are not safe for resting. They are traps that put the animals’ lives in danger.' }
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={3}
@@ -180,11 +180,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Olhe para esse recife! O que pode acontecer com o ecossistema local quando redes de pesca abandonadas ficam presas nos corais? "}
+                                    questionText={"Look at this reef. What can happen to the local ecosystem when abandoned fishing nets get caught in the corals?"}
                                     options={[
-                                        { id: 'a', text: 'As redes vão se transformar em uma base segura para os corais crescerem. ', explanation: ' Não é bem isso. Redes de pesca não ajudam na recuperação dos corais; elas causam danos e acabam atrapalhando o crescimento, siga em frente e saiba mais!' },
-                                        { id: 'b', text: 'As redes podem danificar os corais e prejudicar a vida marinha que depende deles. ', explanation: 'Isso mesmo! Corais são frágeis e importantes para muitos peixes e outros seres, mas redes abandonadas podem destruir esses habitats, siga em frente e saiba mais! ' },
-                                        { id: 'c', text: 'Os corais vão engolir as redes, absorvendo-as de forma natural.', explanation: 'Boa tentativa, mas corais não conseguem absorver redes. Esses materiais danificam e podem até matar os corais, siga em frente e saiba mais! ' },
+                                        { id: 'a', text: 'The nets will become a safe base for the corals to grow.', explanation: 'That’s not quite it. Fishing nets do not help coral recovery; they cause damage and end up hindering growth. Go ahead to find out more!' },
+                                        { id: 'b', text: 'The nets can damage the corals and harm the marine life that depends on them.', explanation: 'That’s right! Corals are fragile and important for many fish and other creatures but abandoned nets can destroy these habitats. Go ahead to find out more!' },
+                                        { id: 'c', text: 'The corals will engulf the nets, absorbing them naturally.', explanation: 'Nice try, but corals can’t absorb nets. These materials damage and can even kill the corals. Go ahead to find out more!' },
                                 
                                     ]}
                                     correctAnswerId={null}
@@ -199,11 +199,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 5,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={" Agora que você sabe o impacto da pesca fantasma, o que podemos fazer para ajudar a proteger a vida no oceano?"}
+                                    questionText={"Now that you know the impact of ghost fishing, what can we do to help protect ocean life?"}
                                     options={[
-                                        { id: 'a', text: ' Explorar e cuidar dos oceanos, evitando que redes e materiais sejam deixados no mar.', explanation: 'Isso mesmo, explorador! Explorar e proteger os oceanos ajuda a preservar a biodiversidade e proteger ecossistemas preciosos. Torne-se um ajudante do mundo e explore os mares!!  ' },
-                                        { id: 'b', text: 'Incentivar a limpeza dos mares e conscientizar outras pessoas sobre a importância da vida marinha.', explanation: 'Correto, explorador! Conscientizar e promover a limpeza dos mares é essencial para reduzir os impactos da pesca fantasma. Torne-se um ajudante do mundo e explore os mares!!' },
-                                        { id: 'c', text: ' Recolher materiais de pesca abandonados e incentivar o uso de alternativas 	mais seguras para a vida marinha. ', explanation: 'Certíssimo, explorador! Remover redes abandonadas e buscar alternativas seguras são ações importantes para preservar os ecossistemas. Torne-se um ajudante do mundo e explore os mares!! ' },
+                                        { id: 'a', text: 'Explore and take care of the oceans, preventing nets and materials from being left in the sea.', explanation: 'That’s right, explorer! Exploring and protecting the oceans helps preserve biodiversity and protect precious ecosystems. Become a helper of the world and explore the seas!!' },
+                                        { id: 'b', text: 'Encourage ocean clean-up efforts and raise awareness among others about the importance of marine life.', explanation: 'Correct, explorer! Raising awareness and promoting sea cleaning is essential to reduce the impacts of ghost fishing. Become a helper of the world and explore the seas!!' },
+                                        { id: 'c', text: 'Collect abandoned fishing materials and promote the use of safer alternatives for marine life.', explanation: 'Absolutely right, explorer! Removing abandoned networks and seeking safe alternatives are important actions to preserve ecosystems. Become a helper of the world and explore the seas!!' },
                                         
                                     ]}
                                     correctAnswerId={null}
@@ -218,8 +218,8 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={6}> {/* Update nextStage properly */}
                                     <div className="mission-card-header">
-                                        <h2>CUIDE DO NOSSO ECOSSISTEMA!</h2>
-                                        <h4>Você pode fazer a diferença!</h4>
+                                        <h2> TAKE CARE OF OUR ECOSYSTEM!</h2>
+                                        <h4>You can make a difference!</h4>
                                     </div>
                                     <div className="image-container">
                                         <img src={TartarugaNemo}></img>
@@ -241,8 +241,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                             lat: 42.81671,
                                             lng: -69.95354,
                                             image: FocaPesca,
-                                            title: "Olá, explorador!",
-                                            text: "Agora você sabe os riscos da pesca fantasma! Espero que tenha se divetido! ",
+                                            title: "Hello, explorer!",
+                                            text: "Now you know the risks of ghost fishing! Hope you had fun!",
                                             zoom: 7,
                                         }
                                     ]}
@@ -255,14 +255,14 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: <FinalStage
                                 onArrival={() => console.log('Final stage reached!')}
                                 briefing={{
-                                    title: "Pesca Fantasma",
-                                    location: "Costa Brasileira",
+                                    title: "Ghost Fishing",
+                                    location: "Basilian Coast",
                                     image: pace_maine,
                                     report: "Congratulations! You’ve completed your first mission! Your skills are amazing, and we can’t wait to have your help on our next big adventure!",
-                                    reportAll: "Parabéns! 🚀 Você foi incrível nessa missão e aprendeu como é essencial agir antes que o problema da pesca fantasma saia do controle. Quando redes e outros materiais são deixados no mar, eles não só prejudicam o oceano, mas também causam danos profundos em toda a biodiversidade marinha. A gente viu o impacto que isso pode ter nos corais, nas tartarugas e em tantos outros seres marinhos.A boa notícia? Você agora sabe o quanto é importante cuidar e agir! Com a ajuda de tecnologias e ferramentas como imagens e monitoramento, é possível identificar áreas de risco e entrar em ação. Assim, podemos proteger nossos mares e garantir que esses ecossistemas fiquem fortes e cheios de vida. Que essa missão inspire você a explorar mais e cuidar cada vez melhor dos nossos oceanos! 🌊🐢"
+                                    reportAll: "Congratulations! 🚀 You were amazing on this mission and learned how essential it is to act before the problem of ghost fishing gets out of control. When nets and other materials are left in the sea, they not only harm the ocean but also cause deep damage to the entire marine biodiversity. We saw the impact this can have on corals, turtles, and so many other marine beings. The good news? You now know how important it is to care and take action! With the help of technologies and tools like imaging and monitoring, it is possible to identify at-risk areas and take action. This way, we can protect our seas and ensure that these ecosystems remain strong and full of life. May this mission inspire you to explore more and take even better care of our oceans! 🌊🐢"
                                 }}
                                 badge={{
-                                    name: "Emblema da Missão de Pesca Fantasma",
+                                    name: "Ghost Fishing mission badge",
                                     image: badgeFigure
                                 }}
                             />
@@ -272,12 +272,12 @@ const getMissionsByDifficulty = (difficulty) => {
                 {
                     index: 1,
                     concluded: false,
-                    title: "Acidificação dos oceanos",
+                    title: "Ocean Acidification",
                     lat: 40.35052,
                     lng: -73.37517,
-                    location: "Long Beach, Nova Iorque, EUA ",
+                    location: "Long Beach, New York, USA",
                     image: StartMission2,
-                    text: "Prepare-se! Vamos iniciar a segunda missão em nossa jornada para entender o impacto da acidificação dos oceanos,fenômeno que acontece quando os níveis de dióxido de carbono na atmosfera aumentam, tornando as águas mais ácidas. Além disso, o crescimento da pesca esportiva torna os ecossistemas marinhos dos Estados Unidos mais vulneráveis. Sendo o segundo maior emissor de gases poluentes do mundo, o país enfrenta grandes desafios para proteger seus oceanos e diminuir os impactos ambientais.",
+                    text: "Get ready! Let’s start the second mission in our journey to understand the impact of ocean acidification, a phenomenon that occurs when carbon dioxide levels in the atmosphere increase, making the waters more acidic. Additionally, the growth of recreational fishing makes the marine ecosystems of the United States more vulnerable. As the second-largest emitter of polluting gases in the world, the country faces significant challenges in protecting its oceans and reducing environmental impacts.",
                     displayMap: true,
                     fallbackImage: saginaw_bay,
                     csvPath: sagiData,
@@ -318,11 +318,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"O que percebemos nos corais quando o oceano se torna mais ácido? "}
+                                    questionText={"What do we notice in corals when the ocean becomes more acidic?"}
                                     options={[
-                                        { id: 'a', text: 'Eles perdem sua cor e ficam fragilizados.', explanation: 'Muito bem! A acidificação do oceano faz com que os corais percam sua cor, o que é um sinal de que estão fragilizados e mais vulneráveis.' },
-                                        { id: 'b', text: 'Os corais crescem mais rapidamente e ficam mais coloridos.', explanation: 'Na verdade, o oposto acontece. A acidificação prejudica o crescimento dos corais, fazendo com que eles percam a cor e se tornem mais frágeis.' },
-                                        { id: 'c', text: 'Se tornam resistentes aos impactos da acidificação.', explanation: 'Infelizmente, os corais não são resistentes à acidificação. Ela enfraquece os corais, afetando sua cor e saúde.' },
+                                        { id: 'a', text: 'They lose their color and become weakened.', explanation: 'Well done! Ocean acidification makes corals lose their color, which is na sign of fragility and vulnerability.' },
+                                        { id: 'b', text: 'Corals grow faster and become more colorful.', explanation: 'In fact, the opposite happens. Acidification harms coral growth, causing them to lose color and become more fragile.' },
+                                        { id: 'c', text: 'They become resistant to the impacts of acidification.', explanation: 'Unfortunately, corals are not resistant to acidification. It weakens corals, affecting their color and health. ' },
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={1}
@@ -335,11 +335,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 2,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Qual é uma das causas da acidificação dos oceanos?"}
+                                    questionText={"What is one of the causes of ocean acidification?"}
                                     options={[
-                                        { id: 'a', text: 'A redução da pesca nos oceanos.', explanation: 'Não é isso... A redução da pesca pode ajudar os oceanos, mas o que realmente causa a acidificação é o excesso de dióxido de carbono (CO2) no ar.' },
-                                        { id: 'b', text: 'O aumento de dióxido de carbono (Co2) na atmosfera.', explanation: 'Correto! O excesso de dióxido de carbono no ar é uma das principais causas da acidificação dos oceanos.' },
-                                        { id: 'c', text: 'A limpeza frequente das praias.', explanation: 'Na verdade, limpar as praias ajuda o oceano! O que causa a acidificação é o aumento do dióxido de carbono na atmosfera.'}
+                                        { id: 'a', text: 'The reduction of fishing in the oceans.', explanation: 'That’s not it... Reducing fishing can help the oceans, but what really causes acidification is excess carbon dioxide (CO2) in the air.' },
+                                        { id: 'b', text: 'The increase of carbon dioxide (CO2) in the atmosphere.', explanation: 'Correct! Excess carbon dioxide in the air is one of the main causes of ocean acidification.' },
+                                        { id: 'c', text: 'The frequent cleaning of beaches.', explanation: 'In fact, cleaning the beaches helps the ocean! What causes acidification is the increase in carbon dioxide in the atmosphere.'}
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={2}
@@ -352,11 +352,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 3,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"O que é a pesca?"}
+                                    questionText={"What is fishing?"}
                                     options={[
-                                        { id: 'a', text: 'A pesca é a limpeza do lixo no mar, que ajuda a proteger os oceanos.', explanation: 'Não... A pesca é a captura de peixes, não a limpeza dos oceanos.' },
-                                        { id: 'b', text: 'A pesca é a captura de peixes e outros animais do mar, e pode afetar o equilíbrio dos ecossistemas marinhos.', explanation: 'Correto! A pesca envolve a captura de peixes e, se não for bem controlada, pode prejudicar o equilíbrio natural dos oceanos.' },
-                                        { id: 'c', text: 'A pesca é a criação de peixes em tanques, que não tem impacto nos oceanos.', explanation: 'Não é isso! A pesca é a captura de peixes do mar e pode afetar os ecossistemas marinhos.' },
+                                        { id: 'a', text: 'Fishing is the cleaning of trash in the sea, which helps protect the oceans.', explanation: 'No... Fishing is about catching fish, not cleaning the oceans.' },
+                                        { id: 'b', text: 'Fishing is the capture of fish and other marine animals, and it can affect the balance of marine ecosystems.', explanation: 'Correct! Fishing involves the capture of fish and, if not well controlled, can harm the natural balance of the oceans.' },
+                                        { id: 'c', text: 'Fishing is the raising of fish in tanks, which has no impact on the oceans.', explanation: 'It’s not that! Fishing is the capture of fish from the sea and can affect marine ecosystems.' },
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={3}
@@ -369,11 +369,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Como a pesca esportiva pode afetar os ecossistemas marinhos?"}
+                                    questionText={"How can recreational fishing affect marine ecosystems?"}
                                     options={[
-                                        { id: 'a', text: 'Aumenta a quantidade de peixes nos oceanos.', explanation: 'Não, a pesca esportiva não ajuda a aumentar a quantidade de peixes. Se pegarmos muitos, podemos deixar os peixes em perigo e até fazer algumas espécies sumirem!' },
-                                        { id: 'b', text: 'Melhora a saúde dos recifes de corais.', explanation: 'Pescar em recifes pode machucar os corais! Se tirarmos muitos peixes importantes, os recifes podem ficar doentes e perder sua beleza e vida.' },
-                                        { id: 'c', text: 'Pode causar vulnerabilidade nos ecossistemas marinhos', explanation: 'Isso mesmo! A Pesca esportiva pode deixar os ecossistemas marinhos mais fracos... Se não cuidarmos bem, algumas espécies podem desaparecer, e isso afeta toda a vida no mar, tornando tudo mais frágil.' },
+                                        { id: 'a', text: 'It increases the number of fish in the oceans.', explanation: 'No, sport fishing does not help increase the number of fish. If we catch too many, we can put the fish in danger and even cause some species to disappear!' },
+                                        { id: 'b', text: 'It improves the health of coral reefs.', explanation: 'Fishing on reefs can hurt corals! If we take away too many important fish, reefs can become sick and lose their beauty and life.' },
+                                        { id: 'c', text: 'It can cause vulnerability in marine ecosystems.', explanation: 'That’s right! Sport fishing can weaken marine ecosystems... If we don’t take good care, some species can disappear, and this affects all life in the sea, making everything more fragile.' },
                                     ]}
                                     correctAnswerId={'null'}
                                     nextStage={4}
@@ -387,14 +387,14 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={5}>
                                     <div className="mission-card-header">
-                                        <h2>A acidificação</h2>
-                                        <p>Com todo esse estudo, concluímos que a acidificação dos oceanos é um perigo! E como uma de suas causas, temos o efeito estufa que é um problemão também! Ele acontece quando alguns gases, como o dióxido de carbono (CO₂), ficam presos na atmosfera e deixam a Terra mais quente. Só que quando tem CO₂ demais, não é só o ar que sofre — os oceanos também!</p>
+                                        <h2>Acidification</h2>
+                                        <p>With all this study, we conclude that ocean acidification is a danger! And as one of its causes, we have the greenhouse effect, which is a big problem too! It occurs when certain gases, such as carbon dioxide (CO₂), get trapped in the atmosphere and make the Earth warmer. However, when there is too much CO₂, it’s not just the air that suffers; the oceans do too!</p>
                                     </div>
                                     <div className="image-container">
                                         <img src={pexe}></img>
                                     </div>
                                     <div className="text">
-                                        <p>Esse gás, podendo ser emitido com a queima de combustíveis fósseis, desmatamento e até mesmo processos industriais acaba sendo absorvido pela água do mar e deixa ela mais ácida. Isso pode machucar os animais e plantas que vivem no oceano, prejudicando a biodiversidade marinha. Com o tempo, esse processo pode até fazer com que algumas espécies desapareçam, mudando o equilíbrio dos oceanos e impactando todo o planeta! E aí, prontos para a última pergunta?
+                                        <p>This gas, which can be emitted from the burning of fossil fuels, deforestation, and even industrial processes, ends up being absorbed by seawater, making it more acidic. This can harm the animals and plants that live in the ocean, jeopardizing marine biodiversity. Over time, this process could even lead to the disappearance of some species, altering the balance of the oceans and impacting the entire planet! So, are you ready for the last question?
                                         </p>
                                     </div>
                                 </InformativeSectionStage>
@@ -406,11 +406,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 6,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Por que é importante aprender sobre a acidificação dos oceanos?"}
+                                    questionText={"Why is it important to learn about ocean acidification?"}
                                     options={[
-                                        { id: 'a', text: "Porque ela faz os oceanos ficarem mais azuis.", explanation: "Não é bem assim! A acidificação dos oceanos não muda a cor da água, mas sim a sua composição, prejudicando os ecossistemas." },
-                                        { id: 'b', text: 'Porque assim podemos ajudar a proteger a vida marinha e o equilíbrio dos oceanos.', explanation: "Muito bem! Aprender sobre a acidificação nos ajuda a proteger os oceanos e todas as espécies que vivem neles." },
-                                        { id: 'c', text: 'Porque a acidificação dos oceanos torna a água mais limpa e saudável.', explanation: "Na verdade, a acidificação torna a água mais ácida, o que pode fazer mal para a vida marinha." },
+                                        { id: 'a', text: "Because it makes the oceans bluer.", explanation: "Não é bem assim! A acidificação dos oceanos não muda a cor da água, mas sim a sua composição, prejudicando os ecossistemas." },
+                                        { id: 'b', text: 'Because this way we can help protect marine life and the balance of the oceans.', explanation: "Muito bem! Aprender sobre a acidificação nos ajuda a proteger os oceanos e todas as espécies que vivem neles." },
+                                        { id: 'c', text: 'Because ocean acidification makes the water cleaner and healthier.', explanation: "Na verdade, a acidificação torna a água mais ácida, o que pode fazer mal para a vida marinha." },
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={6}
@@ -427,8 +427,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                             lat: 40.35052,
                                             lng: -73.37517,
                                             image: longbeach,
-                                            title: "A Long Beach é linda, mas pode precisar de uma ajudinha!",
-                                            text: "Nós, humanos, impactamos o mundo ao nosso redor, olhe ao redor do nosso próprio ambiente, como você acha que pode mudá-lo? Como você acha que pode ajudar o mundo ao seu redor, os humanos, a terra e os oceanos?",
+                                            title: "Long Beach is beautiful, but it may need a little help!",
+                                            text: "We, humans, impact the world around us. Look around at our own environment; how do you think you can change it? How do you think you can help the world around you, humans, the Earth, and the oceans?",
                                             zoom: 10,
                                         },
                                     ]}
@@ -444,8 +444,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                         title: "Acidificação dos oceanos",
                                         location: "Long Beach, Nova Iorque, EUA",
                                         image: saginaw_bay,
-                                        report: "Muito bem! Graças à sua ajuda, descobrimos o que está acontecendo em Long Beach com todos esses problemas resultando na acidificação dos oceanos e começamos a pensar em maneiras inteligentes de consertar isso!",
-                                        reportAll: "Com todas essas perguntas e explicações, você aprendeu como o dióxido de carbono afeta os oceanos, como a pesca esportiva e a pesca fantasma impactam a vida marinha, e por que é tão importante cuidar do nosso planeta. Além disso, aprendeu sobre o impacto da pesca esportiva e da pesca fantasma, que causam grandes danos à biodiversidade, ameaçando várias espécies e comprometendo o equilíbrio dos ecossistemas. Esses temas mostram a importância de cuidarmos do nosso planeta, já que o oceano é essencial para a saúde do planeta e de todos nós. Entender essas questões e conscientizar outras pessoas são passos fundamentais para preservar nossos mares e suas riquezas naturais. Cada ação, por menor que pareça, contribui para a proteção dos ecossistemas e para o bem-estar de toda a biodiversidade marinha. E agora, você sabe mais sobre como proteger os oceanos. Continue assim!"
+                                        report: "Congratulations! Thanks to your help, we discovered what is happening in Long Beach with all these issues resulting in ocean acidification and started thinking of smart ways to fix it!",
+                                        reportAll: "With all these questions and explanations, you learned how carbon dioxide affects the oceans, how sport fishing and ghost fishing impact marine life, and why it is so important to care for our planet. Additionally, you learned about the impact of sport fishing and ghost fishing, which cause significant damage to biodiversity, threatening various species and compromising the balance of ecosystems. These topics highlight the importance of taking care of our planet, as the ocean is essential for the health of the planet and all of us. Understanding these issues and raising awareness among others are fundamental steps to preserving our seas and their natural riches. Every action, no matter how small it seems, contributes to protecting ecosystems and the well-being of all marine biodiversity. And now, you know more about how to protect the oceans. Keep it up!"
                                     }}
                                     badge={{
                                         name: "Emblema Acidificação dos Oceanos",
