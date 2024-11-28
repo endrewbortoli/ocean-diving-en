@@ -441,8 +441,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                 <FinalStage
                                     onArrival={() => console.log('Final stage reached!')}
                                     briefing={{
-                                        title: "Acidificação dos oceanos",
-                                        location: "Long Beach, Nova Iorque, EUA",
+                                        title: "Ocen Acidification",
+                                        location: "Long Beach, New York, USA",
                                         image: saginaw_bay,
                                         report: "Congratulations! Thanks to your help, we discovered what is happening in Long Beach with all these issues resulting in ocean acidification and started thinking of smart ways to fix it!",
                                         reportAll: "With all these questions and explanations, you learned how carbon dioxide affects the oceans, how sport fishing and ghost fishing impact marine life, and why it is so important to care for our planet. Additionally, you learned about the impact of sport fishing and ghost fishing, which cause significant damage to biodiversity, threatening various species and compromising the balance of ecosystems. These topics highlight the importance of taking care of our planet, as the ocean is essential for the health of the planet and all of us. Understanding these issues and raising awareness among others are fundamental steps to preserving our seas and their natural riches. Every action, no matter how small it seems, contributes to protecting ecosystems and the well-being of all marine biodiversity. And now, you know more about how to protect the oceans. Keep it up!"
@@ -460,12 +460,12 @@ const getMissionsByDifficulty = (difficulty) => {
 
                     index: 2,
                     concluded: false,
-                    title: "Eutrofização no Golfo do México.",
+                    title: "Eutrophication",
                     lat: 25.350780,
                     lng: -90.176988,
-                    location: "Golfo do México",
+                    location: "Gulf of Mexico",
                     image: GolfeDoMexico,
-                    text: "O Golfo do México é uma vasta bacia oceânica localizada entre a América do Norte e a América Central, sendo considerado o maior golfo do mundo. Ele cobre uma área de aproximadamente 1,5 milhões de km² e possui um volume de cerca de 2.400 mil km³. Suas águas banham os Estados Unidos, incluindo estados como Flórida, Alabama, Mississippi, Louisiana e Texas; o México, com estados como Tamaulipas e Veracruz; e, a ilha de Cuba. ",
+                    text: "The Gulf of Mexico is a vast ocean basin located between North America and Central America, considered the largest gulf in the world. It covers an area of approximately 1.5 million km² and has a volume of about 2,400 million km³. Its waters wash over the United States, including states such as Florida, Alabama, Mississippi, Louisiana, and Texas; Mexico, with states like Tamaulipas and Veracruz; and the island of Cuba.",
                     displayMap: false,
                     fallbackImage: oman_pace,
                     csvPath: omanData,
@@ -506,22 +506,22 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Olhe esses peixes, o que você acha que aconteceu com eles? "}
+                                    questionText={"Look at these fish, what do you think happened to them? "}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Eles foram mortos por um predador. ",
-                                            explanation: "Boa tentativa, amiguinho! Mas não é isso... O exemplo dessa imagem trata-se sobre Eutrofização, que acabou afetando na vida dos peixes desse corpo d’agua."
+                                            text: "They were killed by a predator.",
+                                            explanation: "Good try, buddy! But it's not that... The example in this image is about Eutrophication, which ended up affecting the life of the fish in this body of water."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'Eles morreram pela poluição da água. ',
-                                            explanation: "Parabéns, você acertou! Esses peixes morreram pela poluição da água, porém, essa poluição é um processo chamado Eutrofização! Esse processo é quando a água tem tantos nutrientes que algas e ciano bactérias começam a se reproduzir de maneira irregular, e essa grande quantidade de seres na água gera uma escassez de oxigênio."
+                                            text: 'They died from water pollution.',
+                                            explanation: "Congratulations, you got it right! These fish died due to water pollution, but this pollution is a process called Eutrophication! This process occurs when the water has so many nutrients that algae and cyanobacteria start to reproduce irregularly, and this large number of organisms in the water generates an oxygen shortage."
                                         },
                                         {
                                             id: 'c',
-                                            text: 'Eles estão dormindo depois de nadar bastante.',
-                                            explanation: "Não é nada disso... Os peixes estão mortos! Isso tudo culpa da Eutrofização, que acabou com os peixes daquele lugar."
+                                            text: 'They are sleeping after swimming a lot.',
+                                            explanation: "It's not that at all... The fish are dead! All of this is due to Eutrophication, which wiped out the fish in that area."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -536,7 +536,7 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={2}>
                                     <div className="mission-card-header">
-                                        <h2>Analise e entenda a imagem a seguir</h2>
+                                        <h2>Analyze and understand the following image</h2>
                                         <p></p>
                                     </div>
                                     <div className="image-container">
@@ -556,22 +556,22 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 3,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={" Então, resumidamente, o que é Eutrofização?  "}
+                                    questionText={"So, in summary, what is Eutrophication?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: " É o processo de reprodução de uma alga que come peixes.  ",
-                                            explanation: " Calma jovem, as algas não comem peixes. O problema é que elas crescem demais e consomem o oxigênio da água, o que prejudica os peixes e outros seres. "
+                                            text: "It is the reproduction process of fish-eating algae.",
+                                            explanation: "Calm down, young one, the algae don't eat fish. The problem is that they grow too much and consume the oxygen in the water, which harms the fish and other creatures."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'É um processo que libera oxigênio na água.  ',
-                                            explanation: " Essa opção está incorreta, explorador. A eutrofização, na verdade, reduz o oxigênio na água, pois as algas usam muito oxigênio para crescer, deixando pouco para os outros seres vivos. "
+                                            text: 'It is a process that releases oxygen into the water.',
+                                            explanation: "This option is incorrect, explorer. Eutrophication reduces the oxygen in the water because the algae use a lot of oxygen to grow, leaving little for other living beings."
                                         },
                                         {
                                             id: 'c',
-                                            text: ' É um processo que causa a morte de fauna e flora em um corpo d’agua, pois o excesso de algas e cianobactérias na água gera um menor nível de oxigenação, assim levando seres a morte.  ',
-                                            explanation: " Parabéns, você acertou em cheio, meu caro! "
+                                            text: 'It is a process that causes the death of fauna and flora in a body of water, as the excess of algae and cyanobacteria in the water generates a lower level of oxygenation, thus leading to death.',
+                                            explanation: "Excellent, you’re nailing it!"
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -586,22 +586,22 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Como você já aprendeu, a Eutrofização acaba com a vida marinha. Na imagem a seguir você pode ver a chamada “Zona Morta” que fica no Golfo do México e está cada vez mais ficando maior... Como você acha que isso pode ser resolvido? "}
+                                    questionText={"As you have learned, Eutrophication destroys marine life. In the following image, you can see the so-called ‘Dead Zone’ in the Gulf of Mexico, which is increasingly expanding… How do you think this can be resolved?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Reduzir o uso de fertilizantes, cuidar melhor do lixo, melhora nas estações de saneamento básico e melhora no descarte de veículos velhos.  ",
-                                            explanation: "Belo conhecimento meu jovem! Ao usar menos fertilizantes e gerenciar melhor o lixo, evitamos que muitos nutrientes cheguem à água, ajudando a prevenir a eutrofização, até a prevenir a poluição."
+                                            text: "Reduce the use of fertilizers, better manage waste, improve sewage treatment facilities, and enhance the disposal of old vehicles.",
+                                            explanation: "Great knowledge, young one! Using less fertilizers and managing waste better helps prevent many nutrients from entering the water, which aids in preventing eutrophication and pollution."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'Jogar mais fertilizantes na água para alimentar os peixes. ',
-                                            explanation: "Que isso, explorador, calma! Jogar mais fertilizantes na água só aumentaria a quantidade de nutrientes e faria as algas crescerem ainda mais, piorando a situação. "
+                                            text: 'Throw more fertilizers into the water to feed the fish.',
+                                            explanation: "Hang in there, explorer! Adding more fertilizers to the water would only increase the amount of nutrients and make the algae grow even more, worsening the situation."
                                         },
                                         {
                                             id: 'c',
-                                            text: ' Construir mais fábricas perto do Golfo do México. ',
-                                            explanation: "Jovem, construir fábricas pode aumentar a poluição e o despejo de produtos químicos na água, contribuindo para a eutrofização e piorando a saúde do ecossistema. "
+                                            text: 'Build more factories near the Gulf of Mexico.',
+                                            explanation: "Young one, building factories can increase pollution and the discharge of chemicals into the water, contributing to eutrophication and worsening the health of the ecosystem."
                                         },
                                       
                                     ]}
@@ -616,21 +616,21 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 5,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Como você acha que esses problemas afetam as regiões locais? "}
+                                    questionText={"How do you think these problems affect the local regions?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Melhoram a pesca, aumentam o turismo e tornam a água mais limpa.",
-                                            explanation: "Incorreto. Na verdade, a eutrofização faz com que haja menos peixes e a água fica suja, o que afasta turistas. "
+                                            text: "They improve fishing, increase tourism, and make the water cleaner.",
+                                            explanation: "Incorrect. In fact, eutrophication leads to fewer fish and dirty water, which drives tourists away."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'Diminui a quantidade de peixes, prejudica a economia local e pode tornar a 	água imprópria para beber.',
-                                            explanation: "É isso mesmo, boa, minha lenda! Menos oxigênio na água significa menos peixes, e a água pode ficar perigosa para beber. "
+                                            text: 'They decrease the number of fish, harm the local economy, and can make the water unsafe to drink.',
+                                            explanation: "That's right, good job! Less oxygen in the water means fewer fish, and the water can become dangerous to drink."
                                         },
                                         { id: 'c',
-                                            text: ' Criam mais empregos nas indústrias de pesca, aumentam a qualidade da água e atraem mais turistas.',
-                                            explanation: " Incorreta, meu explorador. Com menos peixes, menos empregos são criados, e a água se torna suja, afastando os turistas."
+                                            text: 'They create more jobs in the fishing industries, improve water quality, and attract more tourists.',
+                                            explanation: "Incorrect, my explorer. With fewer fish, fewer jobs are created, and the water becomes dirty, driving tourists away."
                                         }
                                         
                                     ]}
@@ -645,11 +645,11 @@ const getMissionsByDifficulty = (difficulty) => {
                                 <FinalStage
                                     onArrival={() => console.log('Final stage reached!')}
                                     briefing={{
-                                        title: "Eutrofização no Golfo do México",
-                                        location: "Golfo do México",
+                                        title: "Euthrophication",
+                                        location: "Gulf of Mexico",
                                         image: oman_picture,
-                                        report: "Woohoo! We did it! We figured out how to tell phytoplankton apart and went even further, chatting about just how important they are. Plus, we explored how their disappearance could impact not just the region, but the entire planet! What an adventure!.",
-                                        reportAll: "Parabéns, explorador! 🎉 Você concluiu essa missão sobre a eutrofização no Golfo do México, desvendando causas, consequências e soluções para esse grave problema ambiental. Ao longo dessa jornada, você ganhou novos aprendizados sobre a importância de proteger nossos recursos hídricos e o impacto da ação humana nos ecossistemas marinhos. Agora, você é um verdadeiro defensor da saúde do Golfo e do equilíbrio ecológico! 🐟🌊"
+                                        report: "",
+                                        reportAll: "Congratulations, explorer! 🎉 You completed this mission on eutrophication in the Gulf of Mexico, uncovering causes, consequences, and solutions to this serious environmental problem. Throughout this journey, you gained new insights into the importance of protecting our water resources and the impact of human actions on marine ecosystems. Now, you are a true advocate for the health of the Gulf and ecological balance! 🐟🌊 "
                                     }}
                                     badge={{
                                         name: "Eutrofização no Golfo do México",
@@ -663,12 +663,12 @@ const getMissionsByDifficulty = (difficulty) => {
                 {
                     index: 3,
                     concluded: false,
-                    title: "Aumento das temperaturas do oceano",
+                    title: "Rising Ocean Temperatures ",
                     lat: -68.2833,
                     lng: -4.76056,
-                    location: "Antártica",
+                    location: "Antarctica",
                     image: Geleira,
-                    text: "Da primeira revolução mundial até hoje, as emissões de gases estufa foram apenas aumentado, assim como as temperaturas do oceanos. Isso é extremamente preocupante pois temperaturas desreguladas impactam negativamente em ecossistemas marinhos, qualidade de vida dos animais e podem também causar o aumento do nível do mar, outro problema grave que possui consequências catastróficas",
+                    text: "From the first global revolution until now, greenhouse gas emissions have only increased, and so have ocean temperatures. This is extremely concerning because unregulated temperatures negatively impact marine ecosystems, the quality of life for animals, and can also cause a rise in sea levels, another serious problem with catastrophic consequences.",
                     displayMap: false,
                     fallbackImage: Geleira,
                     csvPath: omanData,
@@ -709,22 +709,22 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"O mapa da imagem mostra a antártica e a parte vermelha como mais quente e azul mais fria. Com isso, o que você consegue perceber na imagem?"}
+                                    questionText={"The map in the image shows Antarctica, with the red areas indicating warmer temperatures and the blue areas indicating colder temperatures. With this, what can you infer from the image?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "A parte em volta da Antártica está quente.",
-                                            explanation: "Sim, as temperaturas em volta estão só aumentando. Agora, vamos explorar os impactos dessa mudança."
+                                            text: "The area around Antarctica is getting warmer.",
+                                            explanation: "Antarctica is isolated from the rest of the world."
                                         },
                                         {
                                             id: 'b',
-                                            text: "A Antártica está isolada do resto do mundo.",
-                                            explanation: "No mapa, ela realmente parece estar mais isolada, além de não ter seres humanos vivendo lá. Mesmo assim, ela e seus oceanos ainda sofrem as consequências do aquecimento global, tendo suas temperaturas aumentadas. Vamos explorar esse problema mais a fundo!"
+                                            text: "Antarctica is isolated from the rest of the world.",
+                                            explanation: "On the map, it really appears to be more isolated, and it doesn't have humans living there. Nevertheless, it and its oceans still suffer the consequences of global warming, with their temperatures increasing. Let's explore this issue in more depth!"
                                         },
                                         {
                                             id: 'c',
-                                            text: "A parte em volta da Antártica está fria.",
-                                            explanation: "Na verdade, a parte em volta está quente! Essas temperaturas não são adequadas para o ecossistema do continente e o oceano em sua volta. Assim, vamos explorar esse problema mais a fundo e entender o porquê disso."
+                                            text: "The area around Antarctica is cold.",
+                                            explanation: "Actually, the area around it is warm! These temperatures are not suitable for the ecosystem of the continent and the ocean around it. So, let's explore this issue in more depth and understand why this is the case."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -738,17 +738,17 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 2,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Na imagem acima, vemos que uma das coisas que acontece quando a temperatura aumenta é o derretimento do gelo. Qual pode ser uma consequência desse fenômeno?"}
+                                    questionText={"In the image above, we see that one of the things that happens when the temperature increases is the melting of ice. What could be a consequence of this phenomenon?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Os animais que vivem em lugares frios não conseguem sobreviver.",
-                                            explanation: "Isso aí! E você sabia que a outra resposta também estava certa? Vamos explorar esses problemas mais a fundo."
+                                            text: "The animals that live in cold places cannot survive.",
+                                            explanation: "Exactly! Did you know the other answer is also right? Let’s explore these problems in more depth."
                                         },
                                         {
                                             id: 'b',
-                                            text: "O clima pode mudar",
-                                            explanation: "Sim, está correto! E você sabia que a outra resposta também estava certa? Vamos explorar esses problemas mais a fundo."
+                                            text: "The climate can change.",
+                                            explanation: "Yes, that's correct! Did you know the other answer is also right? Let's explore these problems in more depth."
                                         },
                                     ]}
                                     correctAnswerId={null}   //dependendo da resposta ela pula pra uma pergunta diferente
@@ -757,27 +757,26 @@ const getMissionsByDifficulty = (difficulty) => {
                             ),
                         },
                         {
-                            // essa questão aparece se selecionar a "a" da 3
                             displayMap: false,
                             fallbackImage: GeloDerretendo,
                             next: 3,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={" Se os animais não sobreviverem, o ecossistema marinho se desordena. Consegue dizer o porquê?"}
+                                    questionText={"If the animals do not survive, the marine ecosystem becomes disordered. Can you explain why?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "A cadeia alimentar fica bagunçada, já que não tem animais o suficiente.",
-                                            explanation: "Sim, isso aí! Se um animal desaparecer, outros animais e plantas sofrem com isso. Por exemplo, se os animais que caçam sumirem, os animais caçados podem se multiplicar demais e acabar com as plantas.",
+                                            text: "The food chain gets disrupted when there aren't enough animals.",
+                                            explanation: "That's right! If one animal disappears, other animals and plants suffer because of it. For example, if the hunting animals disappear, the hunted animals can multiply too much and end up destroying the plants.",
                                         },
                                         {
                                             id: 'b',
-                                            text: "Como há menos peixes na água, o nível do mar diminui e os mares secam",
-                                            explanation: "A resposta está incorreta, já que o nível do mar não depende da quantidade de peixes. Na verdade, o nível do mar está aumentando por causa do derretimento do gelo!",
+                                            text: "As there are fewer fish in the water, the sea level decreases, and the seas dry up.",
+                                            explanation: "This response is incorrect, as sea level does not depend on the number of fish. In fact, sea levels are rising due to the melting of ice!",
 
                                             id: 'c',
-                                            text: " A perda de biodiversidade deixa os ecossistemas mais fracos.",
-                                            explanation: "Correto! Se tem mais variedade de seres em um ecossistema ele consegue se recuperar mais rápido, já que cada ser tem um trabalho específico.",
+                                            text: "The loss of biodiversity makes ecosystems weaker.",
+                                            explanation: "Correct! If there is more variety of organisms in an ecosystem, it can recover more quickly, as each organism has a specific role.",
                                         },
                                     ]}
                                     correctAnswerId={null}   
@@ -786,27 +785,27 @@ const getMissionsByDifficulty = (difficulty) => {
                             ),
                         },
                         {
-                            // essa questão aparece se selecionar a "b" da 3
+
                             displayMap: false,
                             fallbackImage: TemperaturaAumentando,
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Com as mudanças climáticas, os ecossistemas marinhos se desordenam. Consegue dizer o porquê?"}
+                                    questionText={"With climate change, marine ecosystems become disrupted. Can you explain why?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Os animais suam muito e se desidratam.",
-                                            explanation: "Não é bem isso. Os animais marinhos não suam, então não sofrem com esse problema."
+                                            text: "Animals sweat a lot and become dehydrated.",
+                                            explanation: "That's not quite right. Marine animals do not sweat, so they do not suffer from this problem. "
                                         },
                                         {
                                             id: 'b',
-                                            text: "A temperatura do mar aumenta e prejudica os animais.",
-                                            explanation: "A resposta está incorreta, já que o nível do mar não depende da quantidade de peixes. Na verdade, o nível do mar está aumentando por causa do derretimento do gelo!",
+                                            text: "The temperature of the sea increases and harms the animals.",
+                                            explanation: "The answer is incorrect, as sea level does not depend on the number of fish. In fact, sea level is rising due to the melting of ice! And also, the loss of biodiversity weakens ecosystems.",
 
                                             id: 'c',
-                                            text: " A perda de biodiversidade deixa os ecossistemas mais fracos.",
-                                            explanation: "Correto! Se tem mais variedade de seres em um ecossistema ele consegue se recuperar mais rápido, já que cada ser tem um trabalho específico."
+                                            text: "The loss of biodiversity weakens ecosystems.",
+                                            explanation: "Correct! When there is more variety of species in an ecosystem, it can recover more quickly, as each species has a specific role."
                                         },
                                     ]}
                                     correctAnswerId={null}   
@@ -820,11 +819,11 @@ const getMissionsByDifficulty = (difficulty) => {
                                 <FinalStage
                                     onArrival={() => console.log('Final stage reached!')}
                                     briefing={{
-                                        title: "Parabéns, você concluiu a missão!",
-                                        location: "Antártica",
+                                        title: "Congratulations, you concluded the mission!",
+                                        location: "Antarctica",
                                         image: mauritania,
                                         report: "",
-                                        reportAll: "Agora você sabe muito mais sobre a mudança de temperatura e seus impactos. Sabia que algumas questões têm mais de uma reposta correta? Se quiser, selecione a missão no globo e faça-a novamente para adquirir mais conhecimento sobre o assunto"
+                                        reportAll: "Congratulations, young explorer! ✨ You embarked on an incredible adventure through the ocean and learned about the rising temperatures of the oceans, a problem that brings serious consequences. Now that you understand its impacts, you have a better sense of the importance of the ocean! 🌊 "
                                     }}
                                     badge={{
                                         name: "Tiny Travelers with Big Effects!",
