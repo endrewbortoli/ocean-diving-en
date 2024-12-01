@@ -50,11 +50,11 @@ const OnlyOneQuestion = ({ questionText, options, correctAnswerId, nextStage, se
         {isAnswered && (
           <div className={isCorrect ? "correct-answer" : "incorrect-answer"}>
             <p>
-              <strong>{'Opção: '}</strong>
+              <strong>{'Option: '}</strong>
               {selectedAnswer}
             </p>
             {selectedExplanation && <p>{selectedExplanation}</p>}
-            <button className="continue-btn" onClick={handleNext}>Continuar</button>
+            <button className="continue-btn" onClick={handleNext}>Continue</button>
           </div>
         )}
       </div>

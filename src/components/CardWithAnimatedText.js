@@ -10,9 +10,9 @@ const CardWithAnimatedText = ({ coordinates }) => {
 
   useEffect(() => {
     const texts = [
-      "Recebendo dados das missões...",
-      "GPS atualizado e pontos das missões ativos",
-      "Selecione a missão para começar a sua jornada!",
+      "Receiving mission data...",
+      "GPS updated and mission points activated",
+      "Select a mission to start your journey!"
     ];
 
     if (lineIndex < texts.length) {

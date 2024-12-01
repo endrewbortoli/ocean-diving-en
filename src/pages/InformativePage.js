@@ -75,9 +75,9 @@ function LandingPage() {
                     <div id="landingPageContent">
                         <div id="landingPageTextContainer">
                             <h1>OceanDiving</h1>
-                            <h2>Aprenda sobre o mar e ganhe emblema colecionáveis!</h2>
+                            <h2>Learn about the sea and earn collectible badges!</h2>
                         </div>
-                        <h3>Clique na água para gerar ondas!</h3>
+                        <h3>Click on the water to generate waves!</h3>
                     </div>
                 )}
             </WaterWave>
@@ -98,7 +98,7 @@ function LandingPage() {
                     cursor: 'pointer'
                 }}
             >
-                {isMuted ? 'Desmutar' : 'Mutar'}
+                {isMuted ? 'Unmute' : 'Mute'}
             </button>
 
             {/* Botão de Voltar */}

@@ -24,9 +24,9 @@ const LpContent = ({ setDifficulty }) => {
       <img src={logo} alt="Ocean Logo" className="logo" />
       <h1>OCEANDIVING</h1>
       <p className="text">
-        Bem-vindo ao mundo da exploração subaquática, explorador! Você foi selecionado para participar do programa <strong>OCEAN DIVING</strong>, onde realizará missões incríveis nos oceanos de todo o planeta. Sua tarefa será explorar as profundezas do mar e gerar relatórios detalhados sobre fenômenos monitorados por tecnologias de sensoriamento remoto.        
+      Welcome to the world of underwater exploration, explorer! You have been selected to participate in the <strong>OCEAN DIVING</strong> program, where you will undertake incredible missions across the world's oceans. Your task will be to explore the ocean depths and generate detailed reports on phenomena monitored by remote sensing technologies.        
       </p>
-      <h6>Selecione a dificuldade:</h6>
+      <h6>Select the difficulty:</h6>
 
       <div className="image-selection">
         {options.map((option, index) => (

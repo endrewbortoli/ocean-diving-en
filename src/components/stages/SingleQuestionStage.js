@@ -42,8 +42,9 @@ function SingleQuestionStage({ setStageIndex, question, answeredOptions = [] }) 
         />
       ) : (
         <div className="no-options-container">
-          <p>Todas as opções foram respondidas!</p>
-          <button onClick={() => setStageIndex(null)}>Seguir em frente</button> {/* Botão para seguir em frente */}
+          <p>All options have been answered!
+          </p>
+          <button onClick={() => setStageIndex(null)}>Keep going</button> {/* Botão para seguir em frente */}
         </div>
       )}
     </div>

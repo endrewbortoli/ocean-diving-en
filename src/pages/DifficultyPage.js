@@ -94,7 +94,7 @@ export default function App() {
   };
 
   const goToLanguagePage = () => {
-    window.location.href = "https://jactech9458.com/oceandive/en"; // Redireciona para o site externo
+    window.location.href = "https://jactech9458.com/oceandive"; // Redireciona para o site externo
   };
 
   return (
@@ -175,7 +175,7 @@ export default function App() {
       </button>
 
       <button className="start-mission-button" onClick={goToNextPage}>
-        COMEÇAR MISSÃO
+        START MISSION
       </button>
     </>
   );
