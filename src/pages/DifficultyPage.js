@@ -94,7 +94,7 @@ export default function App() {
   };
 
   const goToLanguagePage = () => {
-    window.location.href = "https://jactech9458.com/oceandive"; // Redireciona para o site externo
+    window.location.href = "https://jactech9458.com/oceandiving"; // Redireciona para o site externo
   };
 
   return (

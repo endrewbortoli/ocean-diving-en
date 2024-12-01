@@ -171,7 +171,7 @@ export default function App() {
           cursor: 'pointer'
         }}
       >
-        {isPlaying ? 'Mutar' : 'Desmutar'}
+        {isPlaying ? 'Mute' : 'Unmute'}
       </button>
     </>
   );
