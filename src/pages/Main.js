@@ -176,7 +176,7 @@ function Main({ missions }) {
         borderRadius: '5px',
         gap:'14px',
       }}>
-        Difficulty {difficulty}
+        Difficulty: {difficulty}
 
         <button
     onClick={() => window.history.back()}
