@@ -117,7 +117,7 @@ function LandingPage() {
                     cursor: 'pointer'
                 }}
             >
-                Voltar
+                Return
             </button>
         </motion.div>
     );

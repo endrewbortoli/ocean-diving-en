@@ -8,9 +8,9 @@ import easyImage from '../assets/emblemainicio.jpg';
 
 const LpContent = ({ setDifficulty }) => {
   const options = [
-    { label: "FÁCIL", text: "Explorator", image: easyImage },
-    { label: "MÉDIO", text: "Detective", image: mediumImage },
-    { label: "DÍFICIL", text: "Engineer", image: hardImage },
+    { label: "EASY", text: "Explorator", image: easyImage },
+    { label: "MEDIUM", text: "Detective", image: mediumImage },
+    { label: "HARD", text: "Engineer", image: hardImage },
   ];
   const [currentIndex, setCurrentIndex] = useState(1); // Start at "MÉDIO"
 

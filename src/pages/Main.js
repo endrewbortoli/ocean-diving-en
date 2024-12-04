@@ -108,11 +108,11 @@ function Main({ missions }) {
   };
 
   // State to hold the difficulty level
-  const [difficulty, setDifficulty] = useState('MÉDIO'); // Default value
+  const [difficulty, setDifficulty] = useState('MEDIUM'); // Default value
 
   useEffect(() => {
     // Get the selected difficulty from localStorage
-    const savedDifficulty = localStorage.getItem('selectedDifficulty') || 'MÉDIO';
+    const savedDifficulty = localStorage.getItem('selectedDifficulty') || 'MEDIUM';
     setDifficulty(savedDifficulty); // Update the state with the saved difficulty
   }, []);
 
@@ -160,7 +160,7 @@ function Main({ missions }) {
           cursor: 'pointer'
         }}
       >
-        {isPlaying ? 'Mutar' : 'Desmutar'}
+        {isPlaying ? 'Mute' : 'Unmute'}
       </button>
 
       {/* Display the selected difficulty at the bottom-left */}
@@ -176,7 +176,7 @@ function Main({ missions }) {
         borderRadius: '5px',
         gap:'14px',
       }}>
-        Dificuldade: {difficulty}
+        Difficulty {difficulty}
 
         <button
     onClick={() => window.history.back()}
@@ -191,7 +191,7 @@ function Main({ missions }) {
       marginLeft: '12px',
     }}
   >
-    Voltar
+    Return
   </button>
 
       </div>
