@@ -62,7 +62,7 @@ import Geleira from './assets/oceandiving/mission4/img_introducao.jpg';
 // Função que retorna as missões com base no nível de dificuldade
 const getMissionsByDifficulty = (difficulty) => {
     switch (difficulty) {
-        case 'EASY':
+        case 'FÁCIL':
             return [
                 {
                     index: 0,
@@ -836,7 +836,7 @@ const getMissionsByDifficulty = (difficulty) => {
                 }
             ];
 
-        case 'MEDIUM':
+        case 'MÉDIO':
             return [
                 {
                     index: 0,

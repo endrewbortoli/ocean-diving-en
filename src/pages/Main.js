@@ -108,11 +108,11 @@ function Main({ missions }) {
   };
 
   // State to hold the difficulty level
-  const [difficulty, setDifficulty] = useState('MEDIUM'); // Default value
+  const [difficulty, setDifficulty] = useState('MÉDIO'); // Default value
 
   useEffect(() => {
     // Get the selected difficulty from localStorage
-    const savedDifficulty = localStorage.getItem('selectedDifficulty') || 'MEDIUM';
+    const savedDifficulty = localStorage.getItem('selectedDifficulty') || 'MÉDIO';
     setDifficulty(savedDifficulty); // Update the state with the saved difficulty
   }, []);
 
@@ -160,7 +160,7 @@ function Main({ missions }) {
           cursor: 'pointer'
         }}
       >
-        {isPlaying ? 'Mute' : 'Unmute'}
+        {isPlaying ? 'Mutar' : 'Desmutar'}
       </button>
 
       {/* Display the selected difficulty at the bottom-left */}
@@ -176,7 +176,11 @@ function Main({ missions }) {
         borderRadius: '5px',
         gap:'14px',
       }}>
+<<<<<<< HEAD
         Difficulty: {difficulty}
+=======
+        Dificuldade: {difficulty}
+>>>>>>> parent of 7f121bf (everything on english)
 
         <button
     onClick={() => window.history.back()}
@@ -191,7 +195,7 @@ function Main({ missions }) {
       marginLeft: '12px',
     }}
   >
-    Return
+    Voltar
   </button>
 
       </div>
