@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../styles/SelectionComponent.css";
-import mediumImage from '../assets/animal2.jpg';
-import hardImage from '../assets/animal3.jpg';
+import mediumImage from '../assets/reefscape.webp';
+import hardImage from '../assets/FIRST_DIVE-intothedeep-PatchLogo.webp';
 import logo from '../assets/logooceanspace.png';
-import easyImage from '../assets/emblemainicio.jpg';
+import easyImage from '../assets/submerged.webp';
 
 
 const LpContent = ({ setDifficulty }) => {
