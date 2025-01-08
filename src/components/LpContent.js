@@ -8,9 +8,9 @@ import easyImage from '../assets/submerged.webp';
 
 const LpContent = ({ setDifficulty }) => {
   const options = [
-    { label: "FÁCIL", text: "Explorator", image: easyImage },
-    { label: "MÉDIO", text: "Detective", image: mediumImage },
-    { label: "DÍFICIL", text: "Engineer", image: hardImage },
+    { label: "FÁCIL", text: "Submerged", image: easyImage },
+    { label: "MÉDIO", text: "Reefscape", image: mediumImage },
+    { label: "DÍFICIL", text: "Into The Deep", image: hardImage },
   ];
   const [currentIndex, setCurrentIndex] = useState(1); // Start at "MÉDIO"
 
