@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/SelectionComponent.css";
-import mediumImage from '../assets/reefscape.webp';
-import hardImage from '../assets/FIRST_DIVE-intothedeep-PatchLogo.webp';
+import mediumImage from '../assets/reefscape1.png';
+import hardImage from '../assets/intothedeep1.png';
 import logo from '../assets/logooceanspace.png';
 import easyImage from '../assets/submerged.webp';
 

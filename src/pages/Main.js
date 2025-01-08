@@ -176,11 +176,7 @@ function Main({ missions }) {
         borderRadius: '5px',
         gap:'14px',
       }}>
-<<<<<<< HEAD
-        Difficulty: {difficulty}
-=======
         Dificuldade: {difficulty}
->>>>>>> parent of 7f121bf (everything on english)
 
         <button
     onClick={() => window.history.back()}
